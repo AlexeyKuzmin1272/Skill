@@ -1,0 +1,61 @@
+git --version
+
+git config --global user.name "alexey.kuzmin"
+git config --global user.email alexey.kuzmin@gmail.com
+
+#Обратите внимание, что в этих командах есть опция --global. 
+#Это значит, что вам достаточно будет один раз ввести эти данные, и они будут сохранены для всех проектов. 
+#Если вы захотите поменять информацию, то нужно будет ввести ту же команду, только без  --global.
+
+man git-config
+git config --global core.editor "'D:\APP\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+git config --global commit.template D:\Git\.gitmessage.txt 
+
+D:\>cd Git
+
+D:\Git>mkdir Test
+
+D:\Git>cd Test
+
+D:\Git\Test>git init
+Initialized empty Git repository in D:/Git/Test/.git/
+
+D:\Git\Test>git status
+On branch git_init
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Чтобы добавить все файлы, которые находятся в директории, выполните следующую команду:
+
+git add -A
+git add .
+
+В будущем, чтобы добавлять отдельные файлы, используйте ту же команду add, но с указанием имени файла:
+
+git add this.js
+
+git commit -m "Init TestGit"
+
+
+git branch akbranch
+git status
+git log
+git branch --list
+git branch --list -v
+git checkout akbranch
+	
+git branch
+git checkout git_init
+
+ // в папке Skill
+git remote add origin https://github.com/AlexeyKuzmin1272/Skill.git
+git push --set-upstream origin akbranch
+
+# с удалённого сервера к себе
+# из папки, куда собираемся клонировать запускаем команду откуда собираемся клонировать
+git clone  https://github.com/AlexeyKuzmin1272/Skill.git
+
+
+
